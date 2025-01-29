@@ -1,0 +1,13 @@
+Notes for self
+
+these need to be run in a directory above project directory, ie ratebeer should be a subdirectory of working directory
+
+build base image:
+docker build -t base-rails -f Dockerfile.rails .
+
+init project:
+docker run -it -v $PWD:/home/dev/app base-rails rails new --skip-bundle ratebeer
+
+run server for dev:
+docker run -it -p 3000:3000 -v $PWD:/home/dev/app base-rails /bin/sh -c "cd ratebeer && bundle install && rails server -b 0.0.0.0"
+

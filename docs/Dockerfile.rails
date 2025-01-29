@@ -1,0 +1,22 @@
+FROM ruby:3.2
+
+# for my own dev environment, to avoid/reduce pain with file ownership/permissions
+# if your setup is not identical, you may have to adjust this :)
+RUN groupadd --gid 1001 dev \
+  && useradd --uid 1001 --gid dev --shell /bin/bash --create-home dev
+USER dev
+
+WORKDIR /home/dev/app
+
+RUN gem install bundler rake rspec
+RUN gem install rails -v 7.1.5.1
+# ruby 3.2 and rails 7.1 seem to be lowest combination not throwing errors
+# I suspect some dependency needs to have its version chosen manually
+# rather than waste time debugging those errors, use what works
+
+ENV BUNDLE_PATH="/home/dev/app/bundle"
+
+EXPOSE 3000
+
+CMD ["/bin/sh"]
+
