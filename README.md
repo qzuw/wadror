@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[WADROR](https://github.com/mluukkai/WebPalvelinohjelmointi2023/tree/main)
 
-Things you may want to cover:
+Sovellus ei ainakaan toistaiseksi webissä kun en nyt jaksa tehdä markkinakartoitusta
+mitkä vaihtoehdot ovat tällä hetkellä ilmaisia, ja lupaavat uskottavasti olla myymättä
+tietoja eteenpäin. Ja salasanoja on jo liikaa.
 
-* Ruby version
+Tuotantokäyttöön sovelluksen juuressa on railsin generoima Dockerfile jota en ole vielä testannut.
 
-* System dependencies
+Devaukseen ks docs/notes
 
-* Configuration
 
-* Database creation
+Ehkä puutteita(?):
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ - panimot.html.erb koska ohjeissa ei speksattu sen poistoa
+ - yksittäisen oluen näkymässä otsikko on linkki koska ei speksattu toisin
