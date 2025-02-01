@@ -15,3 +15,6 @@ Ehkä puutteita(?):
 
  - panimot.html.erb koska ohjeissa ei speksattu sen poistoa
  - yksittäisen oluen näkymässä otsikko on linkki koska ei speksattu toisin
+
+Paikka materiaalissa:
+2.5 seuraavaksi
