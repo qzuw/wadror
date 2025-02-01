@@ -73,4 +73,7 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
+
+  # web console
+  config.web_console.permissions = '172.17.0.0/16'
 end
