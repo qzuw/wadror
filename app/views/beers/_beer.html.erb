@@ -8,6 +8,13 @@
     <%= beer.style %>
   </p>
 
+  <% if beer.ratings.empty? %>
+    This beer has not yet been rated!
+  <% else %>
+    <strong>Average rating:</strong>
+    <%= beer.average_rating %>
+  <% end %>
+
   <p>
     <strong>Brewery:</strong>
     <%= link_to beer.brewery.name, beer.brewery %>

@@ -4,7 +4,14 @@
 
 <div id="beers">
   <% @beers.each do |beer| %>
-    <%= render beer %>
+    <p>
+      <%= link_to beer.name, beer %>
+    </p>
+
+    <p>
+      <strong>Style:</strong>
+      <%= beer.style %>
+    </p>
   <% end %>
 </div>
 
