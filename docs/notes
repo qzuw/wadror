@@ -5,7 +5,7 @@ these need to be run in a directory above project directory, ie ratebeer should 
 build base image:
 docker build -t base-rails -f Dockerfile.rails .
 
-init project:
+init project (done, not needed for this project again):
 docker run -it -v $PWD:/home/dev/app base-rails rails new --skip-bundle ratebeer
 
 run server for dev:
