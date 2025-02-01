@@ -11,7 +11,9 @@
   <% if beer.ratings.empty? %>
     This beer has not yet been rated!
   <% else %>
-    <strong>Average rating:</strong>
+    This beer has
+    <%= beer.ratings.count %>
+    ratings with an average of
     <%= beer.average_rating %>
   <% end %>
 
