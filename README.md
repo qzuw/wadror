@@ -18,3 +18,7 @@ Ehkä puutteita(?):
 
 Paikka materiaalissa:
 2.5 seuraavaksi
+
+Tunnit:
+osa 1: 4h30min(?)
+osa 2: 3h(?)
